@@ -1,13 +1,13 @@
 import React, {PureComponent} from 'react';
 import { View } from 'react-native';
-import { inject } from 'mobx-react';
+import { inject, observer } from 'mobx-react';
 
 import LoginService from '../model/services/LoginService';
 import LoginViewModel from '../view_model/LoginViewModel';
 import RootStore from '../stores/RootStore';
 import LoginViewController from '../view_controller/LoginViewController';
 
-@inject(RootStore.type.POKEMON_MODEL)
+@inject(RootStore.type.EMPLOYEE_MODEL)
 class LoginProvide extends PureComponent {
     constructor(props) {
         super(props);

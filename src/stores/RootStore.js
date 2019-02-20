@@ -1,5 +1,3 @@
-import { observable, action } from 'mobx'
-import LoginViewModel from '../view_model/LoginViewModel';
 import LoginService from '../model/services/LoginService';
 
 class RootStore {
