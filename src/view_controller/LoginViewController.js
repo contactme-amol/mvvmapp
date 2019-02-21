@@ -7,12 +7,20 @@ class LoginViewController extends PureComponent {
         const { loginViewModel } = this.props;
 
         return (
-            <View>
+            <View style={styles.container}>
                 <Text> Login View Controller </Text>
             </View>
         )
     }
+}
 
+const styles = {
+    container: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "white"
+    }
 }
 
 export default LoginViewController;
